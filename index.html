@@ -1,43 +1,86 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <meta name="description" content="The Walking Media website">
-        <meta name="keywords" content="HTML, CSS, JavaScript">
-        <meta name="author" content="Mikahil Azarov & Alan Smith">
-        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    </head>
-    <body>
-        <div><h1>WalkigMedia</h1></div>
-        <h5>About</h5>
-        <p>WalkingMedia is a agience that provides services to companies</p>
-        <h5>Services we offer:</h5>
-        <p>-Editing shortform content</p>
-        <p>-Email marketing</p>
-        <p>-Paid advertisments</p>
-        <h5>Contact us:</h5>
-        <p>Contact us for more information at <a href="walkingmedia.net">business@walkingmedia.net</a></p>
+<head>
+  <title>Walking Media</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="container">
+        <a href="index.html" class="logo">Walking Media</a>
+        <div class="menu-trigger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <ul class="menu">
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+</header>
+    <main>
+        <section id="hero">
+          <div class="container">
+            <h1>Take Your Online Presence to the Next Level</h1>
+            <p>Welcome to Walking Media, where we specialize in creating stylish and responsive websites, managing social media platforms, and creating high-quality content for businesses and individuals. Our team of experts has a wealth of experience and is dedicated to helping our clients achieve their online goals.</p>
+          </div>
+        </section>
+        <section id="services">
+          <div class="container">
+            <h2>Our Services</h2>
+            <div class="services-grid">
+              <div class="service">
+                <i class="fas fa-laptop-code"></i>
+                <h3>Web Design and Development</h3>
+                <p>We create custom websites that are visually stunning and easy to use, with a focus on responsive design and user experience.</p>
+              </div>
+              <div class="service">
+                <i class="fas fa-mobile-alt"></i>
+                <h3>Social Media Management</h3>
+                <p>We offer comprehensive social media management services to help businesses effectively leverage social media platforms to achieve their online goals.</p>
+              </div>
+              <div class="service">
+                <i class="fas fa-cogs"></i>
+                <h3>Content Creation</h3>
+                <p>We offer professional content creation services to help businesses create high-quality, engaging content for their websites and social media platforms.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="cta">
+          <div class="container">
+            <h2>Ready to Take Your Online Presence to the Next Level?</h2>
+            <p>Contact us to schedule a consultation and learn more about how we can help.</p>
+            <a href="contact.html" class="btn">Contact Us</a>
+          </div>
+        </section>
+      </main>
+      <footer>
+        <div class="container">
+          <p>Copyright 2021 Walking Media</p>
+          <ul>
+            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+            <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+          </ul>
+        </div>
+      </footer>
+      <script src="https://kit.fontawesome.com/yourcode.js"></script>
+      <script>
+        // Toggle menu on mobile
+        const trigger = document.querySelector('.menu-trigger');
+        const menu = document.querySelector('.menu');
+        trigger.addEventListener('click', () => {
+          trigger.classList.toggle('active');
+          menu.classList.toggle('active');
+        });
+      </script>
     </body>
-    <footer>
-        <br>
-        <br>
-        <p>Contact us now: business@walkingmedia.net</p>
-    </footer>
-    <style>
-        html{
-            background-color: lightblue;
-        }
-        
-        body {
-          text-align: center;
-          background-color: white;  
-        }
-        div{
-            color: black;
-            background-color: lightblue;
-        }
-        footer{
-            background-color: lightblue;
-        }
-    </style>
-</html>
+    </html>
+    
