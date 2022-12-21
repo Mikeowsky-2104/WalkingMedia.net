@@ -1,233 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
+
 :root {
-    --primary-color: #333;
-    --secondary-color: #eee;
-    --tertiary-color: #ddd;
-    --quaternary-color: #fff;
-  }
-  
-  * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-  }
-  
-  body {
-    font-family: 'Poppins', sans-serif;
-    font-size: 16px;
-    line-height: 1.5;
-    color: var(--primary-color);
-    background-color: var(--quaternary-color);
-  }
-  
-  header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 999;
-  }
-  
-  nav {
-    display: flex;
-    align-items: center;
-    text-align: center;
-    justify-content: space-between;
-    height: 80px;
-    background-color: var(--quaternary-color);
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  }
-  
-  .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
-  }
-  
-  .logo {
-    font-size: 22px;
-    font-weight: 700;
-    color: var(--primary-color);
-    text-decoration: none;
-  }
-  
-  .menu-trigger {
-    display: none;
-    cursor: pointer;
-  }
-  
-  .menu-trigger span {
-    display: block;
-    width: 35px;
-    height: 5px;
-    background-color: var(--primary-color);
-    margin: 6px 0;
-  }
-  
-  .menu {
-    display: flex;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    font-size: 18px;
-  }
-  
-  .menu li {
-    margin: 0 20px;
-  }
-  
-  .menu a {
-    color: var(--primary-color);
-    text-decoration: none;
-  }
-  
-  .menu a:hover {
-    color: var(--secondary-color);
-  }
-  
-  main {
-    margin: 80px 0;
-  }
-  
-  section {
-    padding: 80px 0;
-  }
-  
-  section h2 {
-    text-align: center;
-    font-size: 36px;
-    font-weight: 700;
-    color: var(--primary-color);
-    margin: 0 0 40px;
-  }
+  --primary-color: #333;
+  --secondary-color: #eee;
+  --tertiary-color: #ddd;
+  --quaternary-color: #fff;
+}
 
-  section #services .services-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 30px;
-    margin: 0 0 80px;
-  }
-  
-  section #services .service {
-    text-align: center;
-  }
-  
-  section #services .service i {
-    font-size: 50px;
-    color: var(--secondary-color);
-    margin: 0 0 20px;
-  }
-  
-  section #services .service h3 {
-    font-size: 24px;
-    font-weight: 700;
-    color: var(--primary-color);
-    margin: 0 0 20px;
-  }
-  
-  section #services .service p {
-    font-size: 18px;
-    line-height: 1.5;
-    color: var(--primary-color);
-    margin: 0;
-  }
-  
-  section #contact form {
-    max-width: 500px;
-    margin: 0 auto;
-  }
-  
-  section #contact .form-group {
-    margin: 0 0 20px;
-  }
-  
-  section #contact label {
-    display: block;
-    font-size: 18px;
-    font-weight: 700;
-    color: var(--primary-color);
-    margin: 0 0 5px;
-  }
-  
-  section #contact input,
-  section #contact textarea {
-    width: 100%;
-    padding: 15px;
-    border: 1px solid var(--tertiary-color);
-    border-radius: 4px;
-    font-size: 16px;
-    color: var(--primary-color);
-  }
-  
-  section #contact textarea {
-    height: 150px;
-  }
-  
-  section #contact button {
-    display: block;
-    width: 100%;
-    padding: 15px;
-    border: none;
-    border-radius: 4px;
-    background-color: var(--secondary-color);
-    color: var(--quaternary-color);
-    font-size: 18px;
-    font-weight: 700;
-    cursor: pointer;
-  }
-  
-  section #contact button:hover {
-    background-color: var(--tertiary-color);
-  }
-  
-  footer {
-    background-color: var(--secondary-color);
-    color: var(--quaternary-color);
-  }
-  
-  footer .container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 40px 0;
-  }
-  
-  footer p {
-    font-size: 14px;
-  }
-  
-  footer ul {
-    display: flex;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
-  
-  footer li {
-    margin: 0 10px;
-  }
-  
-  footer a {
-    color: var(--quaternary-color);
-  }
-  
-  footer a:hover {
-    color: var(--primary-color);
-  }
-  
-  @media (max-width: 992px) {
-    .menu {
-      display: none;
-    }
-  
-    .menu-trigger {
-      display: block;
-    }
-  
-    .menu-trigger.active + .menu {
-      display: flex;
-    }
-  }
+header{
+  text-align: left;
+  background-color: #100d26;
+  font-family: 'Montserrat', sans-serif;
+  margin-left: -1rem;
+  margin-right: -1rem;
+  margin-top: -1rem;
+  padding-left: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+}
 
+#headElements {
+  padding-left: 6rem;
+}
 
+#name{
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  padding-left: 1rem;
+  font-size: 30px;
+}
 
-  
+#hp1{
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  padding:0px; 
+  margin:0px; 
+  letter-spacing: 5px;
+}
+
+#hp2{
+  color:#ec4391 ;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  padding-top: 0px;
+  padding:0px; 
+  margin:0px; 
+  letter-spacing: 2px;
+}
+
+#hp3{
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+}
+
+#hp4{
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+}
+
+button{
+  font-family: 'Montserrat', sans-serif;
+  background-color: #bb4be0 ;
+  color: white;
+  border-width: 0px;
+  border-radius: 100px;
+  width: 350px;
+  height: 80px;
+}
+
+button:hover{
+  background-color: #d4007f;
+  box-shadow: #d4007f;
+
+}
+
+#bh1{
+  font-weight: 600;
+  padding:0px; 
+  margin:0px; 
+  font-size: 20px;
+  letter-spacing: 1px;
+}
+#bh2{
+  font-weight: 400;
+  padding:0px; 
+  margin:0px; 
+}
