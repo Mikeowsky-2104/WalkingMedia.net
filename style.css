@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
 
 :root {
-  --primary-color: #333;
-  --secondary-color: #eee;
-  --tertiary-color: #ddd;
-  --quaternary-color: #fff;
+  --head-background: #100d26;
+  --text-pink: #ec4391;
+  --button-color: #bb4be0;
+  --custom: #201652;
 }
 
 header{
@@ -41,7 +41,7 @@ header{
 }
 
 #hp2{
-  color:#ec4391 ;
+  color:#ec4391;
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
   font-size: 40px;
@@ -67,7 +67,7 @@ header{
 
 button{
   font-family: 'Montserrat', sans-serif;
-  background-color: #bb4be0 ;
+  background-color: #bb4be0;
   color: white;
   border-width: 0px;
   border-radius: 100px;
@@ -92,4 +92,28 @@ button:hover{
   font-weight: 400;
   padding:0px; 
   margin:0px; 
+}
+
+#textarea{
+  margin-left: 6rem;
+  margin-top: 4rem;
+}
+
+#subtitle{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+}
+
+#text{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+}
+
+#highlight {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  color: #201652;
 }
